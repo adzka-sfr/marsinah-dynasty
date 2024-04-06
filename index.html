@@ -23,36 +23,41 @@
   <style>
     /* Custom CSS to center the card */
     .centered-card {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%; /* Adjust card width */
     }
-  </style>
+
+    .card-img-top {
+        max-width: 100%; /* Adjust image width */
+        height: auto;
+    }
+</style>
 </head>
 
 <body>
   <div class="container">
-        <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
-            <div class="col-md-6">
-                <div class="card centered-card">
-                    <h4 class="mt-3 mb-3 text-center"><i class="fab fa-fort-awesome"></i> Marsinah Dynasty <i
-                            class="fab fa-fort-awesome"></i></h4>
-                    <img src="assets/images/keluarga-min.jpg" class="card-img-top" alt="login-image">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="-" id="answer">
-                            <span id="error-answer" style="font-size: smaller; color: red; display: none;"><i
-                                    class="fas fa-info-circle"></i> Silahkan memasukkan jawaban</span>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary" id="go">Masuk</button>
-                        </div>
+    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-md-8"> <!-- Adjust the column size -->
+            <div class="card centered-card">
+                <h4 class="mt-3 mb-3 text-center"><i class="fab fa-fort-awesome"></i> Marsinah Dynasty <i class="fab fa-fort-awesome"></i></h4>
+                <img src="assets/images/keluarga-min.jpg" class="card-img-top" alt="login-image">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="-" id="answer">
+                        <span id="error-answer" style="font-size: smaller; color: red; display: none;"><i
+                                class="fas fa-info-circle"></i> Silahkan memasukkan jawaban</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" id="go">Masuk</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
   <script>
     $(document).ready(function() {
