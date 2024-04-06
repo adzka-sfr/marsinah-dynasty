@@ -33,28 +33,26 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="card centered-card" style="width: 30rem;">
-          <h4 class="mt-3 mb-3" style="text-align: center;"><i class="fa-brands fa-fort-awesome"></i> Marsinah Dynasty <i class="fa-brands fa-fort-awesome"></i></h4>
-          <img src="assets/images/keluarga-min.jpg" class="card-img-top" alt="login-image">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12 mb-3">
-                <input type="text" class="form-control" placeholder="-" id="answer">
-                <span id="error-answer" style="font-size: smaller; color: red; display: none;"><i class="fa-solid fa-circle-info"></i> Silahkan memasukkan jawaban</span>
-              </div>
+        <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="col-md-6">
+                <div class="card centered-card">
+                    <h4 class="mt-3 mb-3 text-center"><i class="fab fa-fort-awesome"></i> Marsinah Dynasty <i
+                            class="fab fa-fort-awesome"></i></h4>
+                    <img src="assets/images/keluarga-min.jpg" class="card-img-top" alt="login-image">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="-" id="answer">
+                            <span id="error-answer" style="font-size: smaller; color: red; display: none;"><i
+                                    class="fas fa-info-circle"></i> Silahkan memasukkan jawaban</span>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="go">Masuk</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-12 text-center">
-                <button class="btn btn-primary" id="go">Masuk</button>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
   <script>
     $(document).ready(function() {
